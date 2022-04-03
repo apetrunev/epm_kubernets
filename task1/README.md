@@ -85,7 +85,7 @@ apiservice.apiregistration.k8s.io/v1beta1.metrics.k8s.io created
 ```
 ## Update deployment
 ![alt text](https://github.com/apetrunev/epm_kubernets/blob/master/task1/kubernetes_before_edit.png)
-
+![alt_text](https://github.com/apetrunev/epm_kubernets/blob/master/task1/kubernetes_after_edit.png)
 
 ## Get token
 ```
