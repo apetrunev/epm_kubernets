@@ -1,7 +1,7 @@
 # Task 1.1
 
 ## Verify Versionn:
-
+```
 alexey@home:/tmp$ kubectl version --client --output=yaml
 clientVersion:
   buildDate: "2022-03-16T15:58:47Z"
@@ -13,7 +13,7 @@ clientVersion:
   major: "1"
   minor: "23"
   platform: linux/amd64
-
+```
 ## Start minikube cluster
 
 alexey@home:/tmp$ minikube start --driver=virtualbox
