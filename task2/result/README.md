@@ -13,12 +13,14 @@ The field `Controlled By` gives an information who is responsible for a pod
 
 # 2
 ## Configuration
+```
 kubectl create ns task2
 kubectl apply -n task2 -f web_canary_deployment.yml
 kubectl apply -n task2 -f web_canary_deployment_v2.yml 
 kubectl apply -n task2 -f ingress-v1.yaml
 kubectl apply -n task2 -f ingress-v2.yaml
 kubectl apply -n task2 -f ingress-partial.yaml
+```
 ```
 alexey@home:~/epm_kubernets/task2/result$ kubectl get -n task2 all
 NAME                                            READY   STATUS    RESTARTS   AGE
