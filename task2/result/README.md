@@ -1,24 +1,18 @@
 # 1
-One of the way is to look up deployments in the kube-system namespace
-```
-kubectl -n kube-system get deployments
-kubectl -n kube-system get pods (see pods with deployments name + hash)
-```
-Another way is to get a more details via
-```
- kubectl -n kube-system describe pods
-```
-The field `Controlled By` gives an information who is responsible for a pod
-
+kubelete
+-- ensures that the containers described in those PodSpecs are running and healthy.
+https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/
 
 # 2
 ## Configuration
+```
 kubectl create ns task2
 kubectl apply -n task2 -f web_canary_deployment.yml
 kubectl apply -n task2 -f web_canary_deployment_v2.yml 
 kubectl apply -n task2 -f ingress-v1.yaml
 kubectl apply -n task2 -f ingress-v2.yaml
 kubectl apply -n task2 -f ingress-partial.yaml
+```
 ```
 alexey@home:~/epm_kubernets/task2/result$ kubectl get -n task2 all
 NAME                                            READY   STATUS    RESTARTS   AGE
